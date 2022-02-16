@@ -86,3 +86,6 @@ And for all end points except login, user ID and Token needs to be inserted in h
   --header 'Content-Type: application/x-www-form-urlencoded' \
   --header 'token: $2y$10$04TbRKs312MIQoimTJ7PbeKFZulnVsjvkUlPvwULas90bHk.qkSNS' \
   --header 'user_id: 1'
+  
+  	curl --request GET \
+  --url http://localhost/to_do_list/index.php/Migrate
