@@ -9,7 +9,7 @@ POSTMAN , Insomnia or other preferred tools can be used to simulate frontend.
 # MVC structure
 Model : "db_model"
 Views : "None"
-Controller: "Todo_list" 
+Controller: "Todo_list", "Migrate" 
 
 # Testing API
 The API needs to be tested by including header Content-Type,Client-Service & Auth-Key with each request
