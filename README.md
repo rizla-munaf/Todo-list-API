@@ -1,7 +1,8 @@
 # Todo-list-API
 
 # Setup
-Download the project folders, change the config and insert database details to database.php file ("application/config") and import MySQL database (todo_list.sql)
+Download the project folders, change the config and insert database details to database.php file ("application/config") and import MySQL database (todo_list.sql).
+Migrtion script can be found under ("application/migrations")
 
 POSTMAN , Insomnia or other preferred tools can be used to simulate frontend.
 
