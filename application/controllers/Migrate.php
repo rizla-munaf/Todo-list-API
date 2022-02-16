@@ -10,6 +10,9 @@ class Migrate extends CI_Controller
                 if ($this->migration->current() === FALSE)
                 {
                         show_error($this->migration->error_string());
+                }else
+                {
+                        json_output(200,array('status' => 200,'message' => 'Tables Successfully Created.'));
                 }
         }
 
