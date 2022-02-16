@@ -6,9 +6,9 @@ Download the project folders, change the config and insert database details to d
 POSTMAN , Insomnia or other preferred tools can be used to simulate frontend.
 
 # MVC structure
-Model : db_model
-Views : None
-Controller: Todo_list 
+Model : "db_model"
+Views : "None"
+Controller: "Todo_list" 
 
 # Testing API
 The API needs to be tested by including header Content-Type,Client-Service & Auth-Key with each request
@@ -18,7 +18,7 @@ And for all end points except login, user ID and Token needs to be inserted in h
 
 # List of the API endpoints:
 
-curl --request POST \
+	curl --request POST \
   --url http://localhost/to_do_list/index.php/login \
   --header 'Auth-Key: todo-api-surge' \
   --header 'Client-Service: frontend-client' \
