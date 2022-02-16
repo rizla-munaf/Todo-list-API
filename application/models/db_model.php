@@ -31,8 +31,7 @@ class db_model extends CI_Model {
       public function login($username,$password){
        
        // login function
-      //  $f="SurgeAdmin";
-//$p=password_hash($f,PASSWORD_DEFAULT);echo $p;exit;
+      
         $q  = $this->db->select('password,user_id')->from('users')->where('username',$username)->get()->row();
     
 
@@ -51,7 +50,8 @@ class db_model extends CI_Model {
                $last_login = date('Y-m-d H:i:s');
 
                //generate random token. using password_hash for complexity.
-               $token = password_hash(substr( md5(rand()), 0, 7),PASSWORD_DEFAULT);
+               $tok = password_hash(substr( md5(rand()), 0, 7),PASSWORD_DEFAULT);
+               $token=preg_replace('~/|\..*~', '', $tok);
 
                //set token expiry time
                $expired_on = date("Y-m-d H:i:s", strtotime('+6 hours'));
