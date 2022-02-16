@@ -30,7 +30,8 @@ class Todo_list extends CI_Controller {
 			
 			if($check_auth_client == true){
 				
-				$params = $_REQUEST;
+				//$params = $_REQUEST;
+		         $params=json_decode(file_get_contents('php://input'), TRUE);
 		        
 		        $username = $params['username'];
 		        $password = $params['password'];
