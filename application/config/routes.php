@@ -63,3 +63,5 @@ $route['create_task']   	   	= 'Todo_list/create_task';
 $route['update_task/(:num)']   	= 'Todo_list/update_task/$1';
 $route['update_status/(:num)']  = 'Todo_list/update_status/$1';
 $route['delete_task/(:num)'] 	= 'Todo_list/delete_task/$1';
+
+$route['migrate']  				= 'migrate/index';
